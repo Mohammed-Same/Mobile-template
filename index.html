@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="mobile-template">
+	<div class="power-button"></div>
+	<div class="vol-button"></div>
+	<div class="vol2-button"></div>
+	<div class="microphone"></div>
+	<div class="speaker"></div>
+ 	<div class="screen" id="scrn">
+ 		<p id="p">WELCOME</p>
+ 		<div class="menu">
+ <button onclick="clickdate()">	<p id="date">Date/Time: <span id="date"></span></p>Date and Time</button>
+ <button onclick="clickinsta()"><img id="insta" src="insta.png">Instagram</button>
+ <button onclick="clickwhats()"><img id="Whats App" src="Whatsapp.png">What's App</button>	</div>
+</div>	
+
+	<button onclick="clickEve()" id="mybtn">
+	<div class="home-button"></button>	
+
+
+		<h1 id="from">from <span >facebook</span></h1>
+			<h2 id="ig">from <span>facebook</span></h2>
+		
+</div>
+<script type="text/javascript">
+	var dt = new Date();
+document.getElementById("date").innerHTML = dt.toLocaleString();
+
+				function clickEve() {
+				document.getElementById('p').style.display='block';
+				document.getElementById('scrn').style.display='block';
+				document.getElementById('date').style.display='none';
+				document.getElementById('insta').style.display='none';
+				document.getElementById('Whats App').style.display='none';
+				document.getElementById('from').style.display='none';
+				document.getElementById('ig').style.display='none';
+
+
+
+
+
+
+
+			}
+				function clickdate() {
+				document.getElementById('p').style.display='none';
+				document.getElementById('scrn').style.display='block';
+				document.getElementById('date').style.display='block';
+				document.getElementById('insta').style.display='none';
+				document.getElementById('Whats App').style.display='none';
+				document.getElementById('from').style.display='none';
+				document.getElementById('ig').style.display='none';
+
+				
+
+
+
+
+			}
+			function clickinsta(){
+				document.getElementById('p').style.display='none';
+				document.getElementById('scrn').style.display='block';
+				document.getElementById('date').style.display='none';
+				document.getElementById('insta').style.display='block';
+				document.getElementById('Whats App').style.display='none';
+				document.getElementById('from').style.display='none';
+				document.getElementById('ig').style.display='block';
+
+			
+
+
+
+
+			}
+				function clickwhats() { 
+				document.getElementById('p').style.display='none';
+				document.getElementById('scrn').style.display='block';
+				document.getElementById('date').style.display='none';
+				document.getElementById('insta').style.display='none';
+				document.getElementById('Whats App').style.display='block';
+				document.getElementById('from').style.display='block';
+				document.getElementById('ig').style.display='none';
+
+
+
+
+
+			}
+			
+			
+			
+
+
+					
+		</script>
+
+</body>
+</html>
