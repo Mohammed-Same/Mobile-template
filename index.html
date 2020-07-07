@@ -19,20 +19,17 @@
  		<div class="menu">
  <button onclick="clickdate()">	<p id="date">Date/Time: <span id="date"></span></p>Date and Time</button>
  <button onclick="clickinsta()"><img id="insta" src="insta.png">Instagram</button>
- <button onclick="clickwhats()"><img id="Whats App" src="Whatsapp.png">What's App</button>	</div>
-</div>	
+ <button onclick="clickwhats()"><img id="Whats App" src="whatsapp.png">What's App</button></div></div>	
+<button onclick="clickEve()" id="mybtn">
+<div class="home-button"></button>	
+<h1 id="from">from <span >facebook</span></h1>
+<h2 id="ig">from <span>facebook</span></h2>
+		</div>
 
-	<button onclick="clickEve()" id="mybtn">
-	<div class="home-button"></button>	
 
-
-		<h1 id="from">from <span >facebook</span></h1>
-			<h2 id="ig">from <span>facebook</span></h2>
-		
-</div>
-<script type="text/javascript">
-	var dt = new Date();
-document.getElementById("date").innerHTML = dt.toLocaleString();
+ <script type="text/javascript">
+				var dt = new Date();
+				document.getElementById("date").innerHTML = dt.toLocaleString();
 
 				function clickEve() {
 				document.getElementById('p').style.display='block';
@@ -42,13 +39,6 @@ document.getElementById("date").innerHTML = dt.toLocaleString();
 				document.getElementById('Whats App').style.display='none';
 				document.getElementById('from').style.display='none';
 				document.getElementById('ig').style.display='none';
-
-
-
-
-
-
-
 			}
 				function clickdate() {
 				document.getElementById('p').style.display='none';
@@ -59,13 +49,8 @@ document.getElementById("date").innerHTML = dt.toLocaleString();
 				document.getElementById('from').style.display='none';
 				document.getElementById('ig').style.display='none';
 
-				
-
-
-
-
-			}
-			function clickinsta(){
+				}
+				function clickinsta(){
 				document.getElementById('p').style.display='none';
 				document.getElementById('scrn').style.display='block';
 				document.getElementById('date').style.display='none';
@@ -74,12 +59,7 @@ document.getElementById("date").innerHTML = dt.toLocaleString();
 				document.getElementById('from').style.display='none';
 				document.getElementById('ig').style.display='block';
 
-			
-
-
-
-
-			}
+				}
 				function clickwhats() { 
 				document.getElementById('p').style.display='none';
 				document.getElementById('scrn').style.display='block';
@@ -89,18 +69,8 @@ document.getElementById("date").innerHTML = dt.toLocaleString();
 				document.getElementById('from').style.display='block';
 				document.getElementById('ig').style.display='none';
 
-
-
-
-
-			}
+				}
 			
-			
-			
-
-
-					
-		</script>
-
+			</script>
 </body>
 </html>
